@@ -1,0 +1,1 @@
+"use strict";var a=10,v=10,c=4,f=5;

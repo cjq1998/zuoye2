@@ -1,0 +1,54 @@
+@import "common.1.scss";
+@import "reset.scss";
+html,
+body,
+.wrapper {
+    @extend %full;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: px2rem(44px);
+    background: #ccc;
+    display: flex;
+    .menu {
+        line-height: px2rem(44px);
+        margin-left: px2rem(10px);
+        span {
+            padding: px2rem(15px);
+            font-size: px2rem(16px);
+        }
+        .active {
+            color: red;
+        }
+    }
+}
+
+section {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .banner {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        .swiper slide {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: px2rem(50px);
+    background: #000;
+}
